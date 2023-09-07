@@ -1,0 +1,21 @@
+<div id="halo" class="transparent"></div>
+
+<script>
+  import "./Cursor";
+</script>
+
+<style>
+  #halo {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 50vmin;
+    height: 50vmin;
+    background: radial-gradient(rgba(255, 0, 0, 0.5), transparent, transparent);
+    opacity: 1;
+    transition: opacity 2s;
+    z-index: -1;
+  }
+  #halo.transparent {
+    opacity: 0;
+  }
+</style>
