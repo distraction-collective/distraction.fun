@@ -1,8 +1,5 @@
-# distraction.fun
+# [distraction.fun](https://distraction.fun)
 
-Website for our collective
-
-- live on [distraction.fun](https://distraction.fun)
 - hosting with [netlify](https://app.netlify.com/sites/distraction-collective/overview)
 - dns with [namecheap](https://ap.www.namecheap.com/domains/domaincontrolpanel/distraction.fun/domain)
 
