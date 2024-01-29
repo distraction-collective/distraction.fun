@@ -1,8 +1,6 @@
-# Distraction Collective
+# distraction.fun
 
-Paris-based collective pushing the boundaries of digital experiences and advocating for the legitimity of video games as an art form
-
-This repo manages our website
+Website for our collective
 
 - live on [distraction.fun](https://distraction.fun)
 - hosting with [netlify](https://app.netlify.com/sites/distraction-collective/overview)
