@@ -5,6 +5,10 @@
   font-size: 1rem;
   cursor: crosshair;
 }
+::selection {
+  background-color: red;
+  color: white;
+}
 a {
   color: grey;
   text-decoration: none;
