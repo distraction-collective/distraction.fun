@@ -17,10 +17,8 @@ import Cursor from "../components/Cursor.astro";
     </article>
     <script>
       import mixpanel from "mixpanel-browser";
-
-      if (location.hostname === "distraction.fun") {
-        mixpanel.init("447bb78443c2b759c1e5bf591a2b7e4e");
-      }
+      mixpanel.init("447bb78443c2b759c1e5bf591a2b7e4e", { debug: true });
+      mixpanel.track("page_view", { pathname: location.pathname });
     </script>
   </body>
 </html>
