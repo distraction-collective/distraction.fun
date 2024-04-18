@@ -28,7 +28,6 @@
     const speed =
       d2(xSmooth - oldXSmooth, ySmooth - oldYSmooth) /
       Math.min(innerWidth, innerHeight);
-    console.log({ speed });
     halo.style.filter = `grayscale(${1 - 2 * speed})`;
     halo.style.left = `${xSmooth}px`;
     halo.style.top = `${ySmooth}px`;

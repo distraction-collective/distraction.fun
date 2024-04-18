@@ -15,5 +15,12 @@ import Cursor from "../components/Cursor.astro";
     <article>
       <slot />
     </article>
+    <script>
+      import mixpanel from "mixpanel-browser";
+
+      if (location.hostname === "distraction.fun") {
+        mixpanel.init("447bb78443c2b759c1e5bf591a2b7e4e");
+      }
+    </script>
   </body>
 </html>
