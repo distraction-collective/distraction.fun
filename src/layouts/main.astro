@@ -16,9 +16,13 @@ import Cursor from "../components/Cursor.astro";
       <slot />
     </article>
     <script>
-      import mixpanel from "mixpanel-browser";
-      mixpanel.init("447bb78443c2b759c1e5bf591a2b7e4e", { debug: true });
-      mixpanel.track("page_view", { pathname: location.pathname });
+      if (location.hostname === "distraction.fun") {
+        const mixpanel = await import("mixpanel-browser");
+        mixpanel.init("447bb78443c2b759c1e5bf591a2b7e4e", {
+          debug: true,
+          track_pageview: true,
+        });
+      }
     </script>
   </body>
 </html>
