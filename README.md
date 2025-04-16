@@ -10,11 +10,4 @@ pnpm install
 pnpm run dev
 ```
 
-Deploy:
-
-```sh
-pnpm run build
-pnpm add -g netlify-cli
-ntl login
-ntl deploy -d dist --prod
-```
+Deploy: run [deploy.sh](./deploy.sh) (linux, mac) or [deploy.ps1](./deploy.ps1) (windows)
