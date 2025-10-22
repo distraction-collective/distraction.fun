@@ -1,6 +1,6 @@
 ---
-import "./main.css";
 import Cursor from "../components/Cursor.astro";
+import "./main.css";
 ---
 
 <html lang="en">
@@ -15,14 +15,5 @@ import Cursor from "../components/Cursor.astro";
     <article>
       <slot />
     </article>
-    <script>
-      if (location.hostname === "distraction.fun") {
-        const mixpanel = await import("mixpanel-browser");
-        mixpanel.init("447bb78443c2b759c1e5bf591a2b7e4e", {
-          debug: true,
-          track_pageview: true,
-        });
-      }
-    </script>
   </body>
 </html>
