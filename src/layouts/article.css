@@ -1,11 +1,13 @@
 body {
   display: flex;
+  justify-content: center;
 }
 nav {
   width: 350px;
 }
 main {
   width: calc(100% - 350px);
+  max-width: 900px;
 }
 nav ul {
   margin: 0;
@@ -17,4 +19,5 @@ main p:first-child {
 }
 img {
   width: 100%;
+  height: auto;
 }
