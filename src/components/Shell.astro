@@ -1,0 +1,17 @@
+---
+import Cursor from "../components/Cursor.astro";
+import "./global.css";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Distraction Collective</title>
+  </head>
+  <body>
+    <Cursor />
+    <slot />
+  </body>
+</html>
