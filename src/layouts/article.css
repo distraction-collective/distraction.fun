@@ -55,7 +55,7 @@ nav.mobile {
     z-index: 10;
     background-color: black;
     inset: 0;
-    margin: 8px;
+    padding: 8px;
   }
   #menu .header {
     margin-bottom: 0;
