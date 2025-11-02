@@ -2,7 +2,7 @@ body {
   display: flex;
   justify-content: center;
 }
-nav {
+nav.desktop {
   width: 350px;
 }
 main {
@@ -20,4 +20,44 @@ main p:first-child {
 img {
   width: 100%;
   height: auto;
+}
+
+nav.mobile {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  nav.desktop {
+    display: none;
+  }
+  nav.mobile {
+    display: block;
+  }
+  body {
+    flex-direction: column;
+  }
+  main {
+    width: initial;
+    max-width: initial;
+  }
+  nav.mobile .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #menu {
+    display: none;
+  }
+  #menu:target {
+    display: block;
+  }
+  #menu {
+    position: fixed;
+    z-index: 10;
+    background-color: black;
+    inset: 0;
+    margin: 8px;
+  }
+  #menu .header {
+    margin-bottom: 0;
+  }
 }

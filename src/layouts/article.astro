@@ -6,12 +6,28 @@ import "./article.css";
 ---
 
 <Shell>
-  <nav>
+  <nav class="desktop">
     <a href="/">Distraction Collective</a>
     <div>✣</div>
     <Events />
     <div>✣</div>
     <Links />
+  </nav>
+  <nav class="mobile">
+    <p class="header">
+      <a href="/">Distraction Collective</a>
+      <a href="#menu">menu</a>
+    </p>
+    <div id="menu">
+      <p class="header">
+        <a href="/">Distraction Collective</a>
+        <a href="#">close</a>
+      </p>
+      <div>✣</div>
+      <Events />
+      <div>✣</div>
+      <Links />
+    </div>
   </nav>
   <main>
     <slot />
