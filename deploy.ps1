@@ -1,4 +1,4 @@
 pnpm run build
-ntl deploy -d dist --prod
+ntl deploy --no-build -d dist --prod
 git commit -m "deploy $(Get-Date -Format o)" --allow-empty
 git push
